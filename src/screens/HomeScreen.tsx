@@ -34,12 +34,6 @@ export function HomeScreen() {
             >
               Mint Cam
             </Text>
-            <Text
-              style={{ marginBottom: 25, textAlign: "center" }}
-              variant="bodyMedium"
-            >
-              Geo taffed <NFT></NFT>.
-            </Text>
             <SignInFeature />
             <Text
               style={{

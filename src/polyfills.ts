@@ -3,7 +3,6 @@ import { Buffer } from "buffer";
 
 global.Buffer = Buffer;
 
-// getRandomValues polyfill
 class Crypto {
   getRandomValues = expoCryptoGetRandomValues;
 }

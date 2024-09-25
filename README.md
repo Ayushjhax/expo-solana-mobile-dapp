@@ -2,7 +2,7 @@
 # Solana Mobile Camera NFT Minter
 
 
-**This is only fully functional on Android.**
+**This is for Android Only.**
 
 
 
