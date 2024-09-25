@@ -35,8 +35,32 @@ import {
 type RootStackParamList = {
   Home: undefined;
   Settings: undefined;
-  // 🔥 Your screens go here
+  Metadata: {
+    metadata: {
+      name: string;
+      symbol: string;
+      description: string;
+      image: string;
+      attributes: Array<{ trait_type: string; value: number }>;
+    };
+  };
+  NFTSuccess: {
+    mintAddress: string;
+    imageUrl: string;
+    name: string;
+    symbol: string;
+    attributes: Array<{ trait_type: string; value: number }>;
+  };
+  NFTFailure: {
+    error: string;
+  };
 };
+declare global {
+  namespace ReactNavigation {
+    interface RootParamList extends RootStackParamList {}
+  }
+}
+
 
 declare global {
   namespace ReactNavigation {
@@ -45,18 +69,20 @@ declare global {
 }
 
 // Documentation: https://reactnavigation.org/docs/stack-navigator/
-const Stack = createNativeStackNavigator();
+
+const Stack = createNativeStackNavigator<RootStackParamList>();
 
 const AppStack = () => {
   return (
     <Stack.Navigator initialRouteName={"Home"}>
       <Stack.Screen
-        name="HomeStack"
+        name="Home"
         component={HomeNavigator}
         options={{ headerShown: false }}
       />
       <Stack.Screen name="Settings" component={Screens.SettingsScreen} />
-      {/** 🔥 Your screens go here */}
+      <Stack.Screen name="NFTSuccess" component={NFTSuccess} />
+      <Stack.Screen name="NFTFailure" component={NFTFailure} />
     </Stack.Navigator>
   );
 };
