@@ -4,6 +4,7 @@
 
 **This is for Android Only.**
 
+[Watch the demo video](my-app/screenshots/MyMovie2.mp4)
 
 
 ## Quick Start
