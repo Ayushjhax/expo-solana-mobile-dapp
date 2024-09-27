@@ -6,13 +6,6 @@
 
 
 
-https://github.com/user-attachments/assets/2fb4144a-a567-4a44-8694-d48295896342
-
-
-
-
-
-
 ## Quick Start
 
 ### Prerequisites
