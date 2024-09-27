@@ -10,6 +10,16 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 
+
+
+/**
+ * This is the main navigator with a bottom tab bar.
+ * Each tab is a stack navigator with its own set of screens.
+ *
+ * More info: https://reactnavigation.org/docs/bottom-tab-navigator/
+ */
+
+
 function TabNavigator() {
   const theme = useTheme();
   return (
