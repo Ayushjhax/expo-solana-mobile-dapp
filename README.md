@@ -4,7 +4,10 @@
 
 **This is for Android Only.**
 
-[Watch the demo video](my-app/screenshots/MyMovie2.mp4)
+
+
+https://github.com/user-attachments/assets/745c2cf7-4d1b-45a2-80c2-88ffaa0eb8d3
+
 
 
 ## Quick Start
